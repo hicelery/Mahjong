@@ -13,11 +13,11 @@ class TileType(Enum):
 
 class Suit(Enum):
     """Enumerate suits"""
-    PIN = "pin"              # 🀇-🀏 (coins/dots)
-    BAMBOO = "bamboo"        # 🀐-🀘 (bamboo)
-    CHARACTER = "character"  # 🀙-🀡 (characters)
-    WIND = "wind"            # 🀢-🀥 (winds)
-    DRAGON = "dragon"        # 🀦-🀨 (dragons)
+    PIN = "pin"
+    BAMBOO = "bamboo"
+    CHARACTER = "character"
+    WIND = "wind"
+    DRAGON = "dragon"
     FLOWER = "flower"        # Optional
     SEASON = "season"        # Optional
 
@@ -119,7 +119,7 @@ def create_tile(tile_code: str) -> Tile:
 
 class Deck:
     """Deck class. Use create tile helper to loop through suit and value
-    136 tiles, 4 eacj number, 3 each honors"""
+    136 tiles, 4 each number, 3 each honors"""
 
     def __init__(self):
         """With type checking"""
