@@ -1,5 +1,5 @@
 from typing import List
-from tile import Tile, create_tile
+from backend.game.tile import Tile, create_tile
 import random
 
 
@@ -42,10 +42,9 @@ class Deck:
 
     def shuffle_deck(self):
         """
-        shuffle deck 
-        can counteract pseudo random with dice roll based 
-        hand formation
-
+        shuffle deck
+        can counteract pseudo random
+        with dice roll based hand formation
         """
 
         random.shuffle(self.tiles)
